@@ -4,7 +4,7 @@
 }
 body {
 	font-family: 'Merriweather', serif;
-	margin: 0; /*did nothing*/
+	margin: 0;
 }
 
 /*Header/banner Layout*/
@@ -55,14 +55,13 @@ select {
 input:focus {
 	border: solid #004b66;
 }
-label {      /*did not know to target*/
-	display: inline-block; /*did not know*/
-	/*margin: 10px;*/ /*did not know*/
+label {      /*need to review target*/
+	display: inline-block; /*need to review target*/
 	color: grey;
 }
-input {     /*did not know to target*/
-	padding: 10px;  /*did not know*/
-	font-size: 1.2em;   /*did not know*/
+input {     /*need to review target*/
+	padding: 10px;  /*need to review target*/
+	font-size: 1.2em; 
 	color: grey;
 	margin: 10px 0;
 }
@@ -85,12 +84,10 @@ button {
   color: white;
   font-size: 24px;
   border: none;
-  /*margin: 0 16px;*/
   margin: 0 2%;
 }
 fieldset {
 	border: none;
-	/*padding-bottom: 15px;*/
 	padding: 15px 0;
 	padding-top: 0;
 	margin: auto;
@@ -113,24 +110,12 @@ footer p {
 }
 
 
-
 @media (min-width: 768px) {
 	.banner {
-		text-align: center;
-		border-bottom: solid #00394d;
 		width: 70%;
-		margin: auto;
-		color: #00394d;
 	}
 	form h2 {
-	  border-top: solid #00394d;
-	  border-width: 2px;
-	  color: #00394d;
-	  text-align: left;
 	  width: 70%;
-	  padding: 25px 0;
-	  margin: auto;
-	  margin-top: 3px;
 	}
 	input[type="text"], 
 	input[type="email"], 
@@ -163,7 +148,7 @@ footer p {
 		justify-content: flex-end;
 		margin: 15px 0;
 	}
-	.col > label {
+	.col > label { /*need to review target*/
 		padding: .5em 1em .5em 0;
 		flex: 1;
 	}
@@ -171,7 +156,6 @@ footer p {
 		width: 45%;
 		margin-bottom: 25px;
 	}
-	
 	.col2 {
 		display: flex;
 		justify-content: flex-start;
@@ -179,56 +163,9 @@ footer p {
 	.col2 > input {
 		margin: 5px 160px;
 	}
-
-
 	
 }
 
 
 
 
-
-
-
-
-
-
-/*.col {
-	display: flex;
-	flex-direction: column;
-}*/
-
-
-/*.col {
-		flex-direction: row;
-	}
-	.col label {
-		flex: 0 0 12rem;
-	}
-	.col input,
-	.col select,
-	.col textarea {
-		flex: 1 1 0;
-		padding: 1rem 1rem;
-	}*/
-
-
-
-/*input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="address"],
-select {
-	background: rgba(255, 255, 255, 0.1);
-	border: none;
-	font-size: 16px;
-	height: auto;
-	margin: 0;
-	outline: 0;
-	padding: 15px;
-	width: 100%;
-	background-color: #eBeeef;
-	color: #8a97a0;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.03 inset);
-	margin-bottom: 30px;
-}*/
