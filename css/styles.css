@@ -56,7 +56,7 @@ input:focus {
 	border: solid #004b66;
 }
 label {      /*did not know to target*/
-	display: inline; /*did not know*/
+	display: inline-block; /*did not know*/
 	/*margin: 10px;*/ /*did not know*/
 	color: grey;
 }
@@ -85,13 +85,14 @@ button {
   color: white;
   font-size: 24px;
   border: none;
-  margin: 0 16px;
+  /*margin: 0 16px;*/
+  margin: 0 2%;
 }
 fieldset {
 	border: none;
-	padding-bottom: 15px;
-	/*padding: 15px 0;
-	padding-top: 0;*/
+	/*padding-bottom: 15px;*/
+	padding: 15px 0;
+	padding-top: 0;
 	margin: auto;
 	text-align: left;
 	width:95%;
@@ -103,34 +104,83 @@ textarea {
 	margin: 10px 0;
 	height: 100px;
 }
+
 /*Footer*/
 footer p {
   font-style: italic;
   text-align: center;
   color: gainsboro;
 }
-/*input[type="text"]:placeholder {
-	text-align: right;
-	color: orange;
-	font-size: 1em;
-} ???????*/
+
 
 
 @media (min-width: 768px) {
+	.banner {
+		text-align: center;
+		border-bottom: solid #00394d;
+		width: 70%;
+		margin: auto;
+		color: #00394d;
+	}
+	form h2 {
+	  border-top: solid #00394d;
+	  border-width: 2px;
+	  color: #00394d;
+	  text-align: left;
+	  width: 70%;
+	  padding: 25px 0;
+	  margin: auto;
+	  margin-top: 3px;
+	}
 	input[type="text"], 
 	input[type="email"], 
 	input[type="number"], 
 	input[type="address"], 
 	textarea, 
 	select {
-	  background: gainsboro;
-	  border: none;
-	  width: 84%;
-	  height: 47px;
-	  border-radius: 3px;
-
+	  width: 70%;
 	  margin: 0 20px;
 	}
+	fieldset {
+		width: 70%;
+	}
+	textarea {
+		width: 100%;
+		margin: 0;
+	}
+	button {
+		width: 70%;
+		margin: 10px 15%;
+	}
+	input:focus {
+		border: solid #004b66;
+	}
+	input {
+		margin: 0 2%;
+	}
+	.col {
+		display: flex;
+		justify-content: flex-end;
+		margin: 15px 0;
+	}
+	.col > label {
+		padding: .5em 1em .5em 0;
+		flex: 1;
+	}
+	input[name="user_zip"] {
+		width: 45%;
+		margin-bottom: 25px;
+	}
+	
+	.col2 {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.col2 > input {
+		margin: 5px 160px;
+	}
+
+
 	
 }
 
@@ -143,12 +193,24 @@ footer p {
 
 
 
+/*.col {
+	display: flex;
+	flex-direction: column;
+}*/
 
 
-
-
-
-
+/*.col {
+		flex-direction: row;
+	}
+	.col label {
+		flex: 0 0 12rem;
+	}
+	.col input,
+	.col select,
+	.col textarea {
+		flex: 1 1 0;
+		padding: 1rem 1rem;
+	}*/
 
 
 
