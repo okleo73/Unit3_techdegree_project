@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<!--href?--><link href="css/styles.css" rel="stylesheet">
 		<meta charset="UTF-8">   <!--did not know-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--did not know-->
 		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">  <!--did not know-->
+		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -24,7 +24,7 @@
 				<input type="email" id="mail" name="user_email" placeholder="Required"><br>
 
 				<label for="number">Phone Number</label><br>    
-<!---? is the type right---><input type="number" id="number" name="user_number"><br>
+<!---right type?---><input type="number" id="number" name="user_number"><br>
 
 				<label for="address">Street Address</label><br>
 				<input type="address" id="address" name="user_address"><br>
@@ -89,10 +89,11 @@
 
 				<label for="zip">Zip Code</label><br>
 				<input type="number" id="zip" name="user_zip"><br>
-		
+			</fieldset>
+
 			<h2>Newsletter</h2>
 			
-			<fieldset>
+			<fieldset class="letter">
 				<label for="letters">Select the newsletters you would like to receive</label><br>
 
 				<input type="checkbox" id="letters" name="user_letters">
@@ -104,7 +105,7 @@
 				<input type="checkbox" id="letters" name="user_letters">
 				<label for="letters">Javascript News</label><br>
 			</fieldset>
-			<fieldset>
+			<fieldset class="format">
 				<label for="format">Newsletter format</label><br>
 
 				<input type="radio" id="format" name="user_format">
@@ -113,7 +114,7 @@
 				<input type="radio" id="format" name="user_format">
 				<label for="format">Plain text</label><br>
 				
-				<label for="topics">Other topics you'd like to hear about</label><br>
+				<label for="topics" class="topics">Other topics you'd like to hear about</label><br>
 				<textarea> </textarea>
 			</fieldset>
 			<button type="submit">Sign Up</button>

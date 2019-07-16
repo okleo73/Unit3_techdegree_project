@@ -8,9 +8,9 @@ body {
 }
 
 /*Header/banner Layout*/
-header{
+header {
 	color: white;
-	background: black;
+	background: #00394d;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -20,9 +20,10 @@ header h1 {
 }
 .banner {
 	text-align: center;
-	border-bottom: solid black;
-	width: 97%;
-	margin: 0 10px;
+	border-bottom: solid #00394d;
+	width: 95%;
+	margin: auto;
+	color: #00394d;
 }
 .banner p {
 	color: lightgrey;
@@ -30,12 +31,14 @@ header h1 {
 
 /*Main Contents*/
 form h2 {
-  border-top: solid black;
+  border-top: solid #00394d;
   border-width: 2px;
-  margin-top: 4px;
-  padding-top: 25px;
-  width: 97%;
-  margin-left: 10px;
+  color: #00394d;
+  text-align: left;
+  width: 95%;
+  padding: 25px 0;
+  margin: auto;
+  margin-top: 3px;
 }
 input[type="text"], 
 input[type="email"], 
@@ -45,53 +48,90 @@ textarea,
 select {
   background: gainsboro;
   border: none;
-  width: 80%;
+  width: 96%;
   height: 47px;
   border-radius: 3px;
 }
 input:focus {
-	border: solid black;
+	border: solid #004b66;
 }
 label {      /*did not know to target*/
-	display: inline-block; /*did not know*/
-	margin: 10px; /*did not know*/
+	display: inline; /*did not know*/
+	/*margin: 10px;*/ /*did not know*/
 	color: grey;
 }
 input {     /*did not know to target*/
 	padding: 10px;  /*did not know*/
 	font-size: 1.2em;   /*did not know*/
 	color: grey;
+	margin: 10px 0;
+}
+select {
+	margin: 10px 0;
 }
 input::placeholder {
 	text-align: right;
+	font-style: italic;
+}
+input[name="user_zip"] {
+	width: 45%;
+	margin-bottom: 25px;
 }
 button {
-  width: 100%;
+  width: 91%;
   height: 64px;
   background: lightseagreen;
   border-radius: 7px;
   color: white;
   font-size: 24px;
   border: none;
+  margin: 0 16px;
 }
 fieldset {
 	border: none;
+	padding-bottom: 15px;
+	/*padding: 15px 0;
+	padding-top: 0;*/
+	margin: auto;
+	text-align: left;
+	width:95%;
 }
-
+.topics {
+	margin: 10px 0;
+}
+textarea {
+	margin: 10px 0;
+	height: 100px;
+}
 /*Footer*/
 footer p {
   font-style: italic;
   text-align: center;
   color: gainsboro;
 }
-input[type="text"]:placeholder {
+/*input[type="text"]:placeholder {
 	text-align: right;
 	color: orange;
-}
+	font-size: 1em;
+} ???????*/
 
 
 @media (min-width: 768px) {
+	input[type="text"], 
+	input[type="email"], 
+	input[type="number"], 
+	input[type="address"], 
+	textarea, 
+	select {
+	  background: gainsboro;
+	  border: none;
+	  width: 84%;
+	  height: 47px;
+	  border-radius: 3px;
 
+	  margin: 0 20px;
+	}
+	
 }
 
 
