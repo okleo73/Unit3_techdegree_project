@@ -118,7 +118,7 @@ input:hover {
 	background-color: cadetblue;
 }
 input {
-	transition: border 2s ease;
+	transition: border 1s ease;
 }
 select {
 	color: grey;
