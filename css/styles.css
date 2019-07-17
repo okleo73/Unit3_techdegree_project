@@ -24,9 +24,14 @@ header h1 {
 	width: 95%;
 	margin: auto;
 	color: #00394d;
+	background: lemonchiffon;
 }
 .banner p {
 	color: lightgrey;
+}
+.banner h2 {
+	margin: 0;
+	padding-top: 3%;
 }
 
 /*Main Contents*/
@@ -55,20 +60,16 @@ select {
 input:focus {
 	border: solid #004b66;
 }
-label {      /*need to review*/
-	display: inline-block; /*need to review*/
+label {      
+	display: inline-block; 
 	color: grey;
 }
-input {     /*need to review*/
-	padding: 10px;  /*need to review*/
+input {     
+	padding: 10px;  
 	font-size: 1.2em; 
 	color: grey;
 	margin: 10px 0;
-
-	background-color: orange;
-	transition-property: color, background-color;
-	transition-duration: 1s;
-	transition-timing-function: ease-out;
+	border: purple;
 }
 select {
 	margin: 10px 0;
@@ -106,6 +107,20 @@ textarea {
 	margin: 10px 0;
 	height: 100px;
 }
+input {
+	transition: background-color 2s ease;
+}	
+input:hover {
+	background-color: cadetblue;
+}
+input {
+	transition: border 2s ease;
+}
+select {
+	color: grey;
+	font-size: 1.2em;
+}
+
 
 /*Footer*/
 footer p {
@@ -113,12 +128,6 @@ footer p {
   text-align: center;
   color: gainsboro;
 }
-/*.newsletter,
- footer{
-	background: #00394d;
-	color: whitesmoke;
-}*/
-
 
 @media (min-width: 768px) {
 	.banner {
@@ -158,7 +167,7 @@ footer p {
 		justify-content: flex-end;
 		margin: 15px 0;
 	}
-	.col > label { /*need to review*/
+	.col > label { 
 		padding: .5em 1em .5em 0;
 		flex: 1;
 	}
@@ -168,16 +177,15 @@ footer p {
 	}
 	.col2 {
 		display: flex;
-		justify-content: flex-end; /*end*/
+		justify-content: flex-end; 
 		margin: 15px 0;
 	}
 	.col2 > label {
 		padding:.5em 1em .5em 0;
-		flex: 1;
 	}
-	/*.col2 > input {*/
-		/*margin: 5px 95px;*/ /*160px*/
-		/*justify-content: flex-end;*/
+	.col2 > input {
+		margin-left: auto; 
+		margin-right: 27.5%; 
 	}
 	
 }
