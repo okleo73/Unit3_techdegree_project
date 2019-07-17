@@ -35,15 +35,16 @@ header h1 {
 }
 
 /*Main Contents*/
-form h2 {
+legend {
   border-top: solid #00394d;
-  border-width: 2px;
+  border-width: 2.8px;
   color: #00394d;
   text-align: left;
-  width: 95%;
+  width: 100%;
   padding: 25px 0;
   margin: auto;
   margin-top: 3px;
+  font-size: 2em;
 }
 input[type="text"], 
 input[type="email"], 
@@ -132,9 +133,6 @@ footer p {
 @media (min-width: 768px) {
 	.banner {
 		width: 70%;
-	}
-	form h2 {
-	  width: 70%;
 	}
 	input[type="text"], 
 	input[type="email"], 
