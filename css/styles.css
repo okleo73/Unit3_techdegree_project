@@ -46,10 +46,15 @@ legend {
   margin-top: 3px;
   font-size: 2em;
 }
+label {      
+	display: inline-block; 
+	color: grey;
+}
 input[type="text"], 
 input[type="email"], 
 input[type="number"], 
 input[type="address"], 
+input[type="tel"],
 textarea, 
 select {
   background: gainsboro;
@@ -60,20 +65,11 @@ select {
 }
 input:focus {
 	border: solid #004b66;
+	outline: none;
 }
-label {      
-	display: inline-block; 
-	color: grey;
-}
-input {     
-	padding: 10px;  
-	font-size: 1.2em; 
-	color: grey;
-	margin: 10px 0;
-	border: purple;
-}
-select {
-	margin: 10px 0;
+input:hover {
+	background-color: cadetblue;
+	transition: background-color 2s ease;
 }
 input::placeholder {
 	text-align: right;
@@ -82,6 +78,33 @@ input::placeholder {
 input[name="user_zip"] {
 	width: 45%;
 	margin-bottom: 25px;
+}
+input {     
+	padding: 10px;  
+	font-size: 1.2em; 
+	color: grey;
+	margin: 10px 0;
+	border: purple;
+	transition: border 2s ease;
+}
+select {
+	margin: 10px 0;
+	color: grey;
+	font-size: 1.2em;
+}
+.newsletter-format {
+	padding-top: 10px;
+}
+.topics {
+	margin: 12px 0;
+}
+textarea {
+	margin: 10px 0;
+	height: 100px;
+}
+textarea:focus{
+	border: solid #004b66;
+	transition: border 2s ease;
 }
 button {
   width: 91%;
@@ -100,30 +123,7 @@ fieldset {
 	margin: auto;
 	text-align: left;
 	width:95%;
-}
-label[for="format"] {
-	margin-top: 10px;
-}
-.topics {
-	margin: 10px 0;
-}
-textarea {
-	margin: 10px 0;
-	height: 100px;
-}
-input {
-	transition: background-color 2s ease;
 }	
-input:hover {
-	background-color: cadetblue;
-}
-input {
-	transition: border 1s ease;
-}
-select {
-	color: grey;
-	font-size: 1.2em;
-}
 
 
 /*Footer*/
@@ -133,6 +133,9 @@ footer p {
   color: gainsboro;
 }
 
+
+
+
 @media (min-width: 768px) {
 	.banner {
 		width: 70%;
@@ -141,6 +144,7 @@ footer p {
 	input[type="email"], 
 	input[type="number"], 
 	input[type="address"], 
+	input[type="tel"],
 	textarea, 
 	select {
 	  width: 70%;

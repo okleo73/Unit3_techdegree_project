@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 	<head>
-		<meta charset="UTF-8">   <!--need to review-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--need to review-->
-		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">  <!--need to review-->
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 		<title>The Code Review</title>
 	</head>
@@ -17,9 +17,9 @@
 		</div>
 		<form action="index.html" method="post">
 			
-			<fieldset><!--need to review-->
+			<fieldset>
 				<legend>Contact Information</legend>
-				
+
 				<div class="col">
 					<label for="name">Full name</label><br>
 					<input required type="text" id="name" name="user_name" placeholder="Required"><br>
@@ -31,13 +31,13 @@
 				</div>
 
 				<div class="col">
-					<label for="number">Phone Number</label><br>    
-	<!---type?---><input type="number" id="number" name="user_number" placeholder="(xxx)xxx-xxxx"><br>
+					<label for="number">Phone Number</label><br> 
+					<input type="tel" id="number" name="user_number" placeholder="(xxx)xxx-xxxx"><br>
 				</div>
 				
 				<div class="col">
 					<label for="address">Street Address</label><br>
-					<input type="address" id="address" name="user_address"><br>
+					<input type="text" id="address" name="user_address"><br>
 				</div>
 
 				<div class="col">
@@ -113,28 +113,28 @@
 				<fieldset class="letter">
 					<legend>Newsletter</legend>
 			
-					<label for="letters">Select the newsletters you would like to receive</label><br>
+					<label>Select the newsletters you would like to receive</label><br>
 					
-			  		<input type="checkbox" id="letters" name="user_letters">
-					<label for="letters">HTML News</label><br>
+			  		<input type="checkbox" id="html-news" name="html-news">
+					<label for="html-news">HTML News</label><br>
 					
-					<input type="checkbox" id="letters" name="user_letters">
-					<label for="letters">CSS News</label><br>
+					<input type="checkbox" id="css-news" name="css-news">
+					<label for="css-news">CSS News</label><br>
 					
-					<input type="checkbox" id="letters" name="user_letters">
-					<label for="letters">Javascript News</label><br>	
-				<!-- </fieldset>
-				<fieldset class="format"> -->
-					<label for="format">Newsletter format</label><br>
+					<input type="checkbox" id="javascript-news" name="javascript-news">
+					<label for="javascript-news">Javascript News</label><br>	
+				
+					<label class="newsletter-format">Newsletter format</label><br>
 
-					<input type="radio" id="format" name="user_format">
-					<label for="format">HTML</label><br>
+					<input type="radio" id="type-html" name="type-html">
+					<label for="type-html">HTML</label><br>
 					
-					<input type="radio" id="format" name="user_format">
-					<label for="format">Plain text</label><br>
+					<input type="radio" id="type-plaintext" name="type-plaintext">
+					<label for="type-plaintext">Plain text</label><br>
 					
 					<label for="topics" class="topics">Other topics you'd like to hear about</label><br>
-					<textarea> </textarea>
+					<textarea id="topics" name="user_feedback"> </textarea>
+					
 				</fieldset>
 				<button type="submit">Sign Up</button>
 			</div>
