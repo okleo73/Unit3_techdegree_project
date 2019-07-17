@@ -101,6 +101,9 @@ fieldset {
 	text-align: left;
 	width:95%;
 }
+label[for="format"] {
+	margin-top: 10px;
+}
 .topics {
 	margin: 10px 0;
 }
